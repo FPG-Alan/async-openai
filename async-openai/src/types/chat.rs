@@ -428,6 +428,8 @@ pub struct ResponseFormatJsonSchema {
 pub enum ChatCompletionToolType {
     #[default]
     Function,
+    #[serde(rename = "builtin_function")]
+    BuiltinFunction,
 }
 
 #[derive(Clone, Serialize, Default, Debug, Builder, Deserialize, PartialEq)]
