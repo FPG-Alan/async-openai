@@ -298,6 +298,7 @@ pub struct ChatCompletionRequestToolMessage {
     /// The contents of the tool message.
     pub content: ChatCompletionRequestToolMessageContent,
     pub tool_call_id: String,
+    pub name: String,
 }
 
 #[derive(Debug, Serialize, Deserialize, Default, Clone, Builder, PartialEq)]
